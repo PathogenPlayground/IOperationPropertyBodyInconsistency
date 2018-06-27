@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OperationPropertyBodyInconsistency.cs</title>
+<style>
+body { font-family: Consolas; font-size:10px; }
+table { border-collapse: collapse; }
+table, td { border: 1px solid silver; }
+th { background:#efefef; }
+td { white-space: pre; }
+</style>
+</head>
+<body>
+<table>
+<tr><th /><th /><th /><th /><td id="l1">class OperationPropertyBodyInconsistency&nbsp;</td><td rowspan="20">CompilationUnit</td><td rowspan="19">ClassDeclaration</td><th /><th /><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l2">{&nbsp;</td><th /><th /><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l3">    int X&nbsp;</td><td rowspan="7">PropertyDeclaration</td><td>PredefinedType</td><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l4">    {&nbsp;</td><td rowspan="6">AccessorList</td><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><td rowspan="4">MethodBodyOperation</td><td id="l5">        get&nbsp;</td><td rowspan="4">GetAccessorDeclaration</td><th /><th /><th /></tr>
+<tr><th /><th /><td rowspan="3">Block</td><td id="l6">        {&nbsp;</td><td rowspan="3">Block</td><th /><th /></tr>
+<tr><td>Literal</td><td>Return</td><td id="l7">            return 1;&nbsp;</td><td>ReturnStatement</td><td>NumericLiteralExpression</td></tr>
+<tr><th /><th /><td id="l8">        }&nbsp;</td><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l9">    }&nbsp;</td><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l10">&nbsp;</td><th /><th /><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l11">    int Y&nbsp;</td><td rowspan="5">PropertyDeclaration</td><td>PredefinedType</td><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l12">    {&nbsp;</td><td rowspan="4">AccessorList</td><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><td rowspan="2">MethodBodyOperation</td><td id="l13">        get&nbsp;</td><td rowspan="2">GetAccessorDeclaration</td><th /><th /><th /></tr>
+<tr><td>Literal</td><td>Return</td><td>Block</td><td id="l14">            =&gt; 2;&nbsp;</td><td>ArrowExpressionClause</td><td>NumericLiteralExpression</td><th /></tr>
+<tr><th /><th /><th /><th /><td id="l15">    }&nbsp;</td><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l16">&nbsp;</td><th /><th /><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l17">    int Z&nbsp;</td><td rowspan="2">PropertyDeclaration</td><td>PredefinedType</td><th /><th /><th /><th /></tr>
+<tr><th /><td>Literal</td><td>Return</td><td>Block</td><td id="l18">        =&gt; 3;&nbsp;</td><td>ArrowExpressionClause</td><td>NumericLiteralExpression</td><th /><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l19">}&nbsp;</td><th /><th /><th /><th /><th /><th /></tr>
+<tr><th /><th /><th /><th /><td id="l20">&nbsp;</td><th /><th /><th /><th /><th /><th /><th /></tr>
+</table>
+</body>
+</html>
