@@ -1,5 +1,7 @@
 This repository demonstrates (what I think is a) bug in the Roslyn `IOperation` API from the official NuGet packages for `Microsoft.CodeAnalysis.Common` and `Microsoft.CodeAnalysis.CSharp`, both version 2.8.2.
 
+The issue has also been confirmed to be present in the nightly build on the Roslyn MyGet, which is 2.9.0-dev-62826-08 at the time of writing.
+
 # Repository Overview
 
 `OperationPropertyBodyInconsistency.html` is the output from a custom tool I have for visualizing the relationship between Roslyn `SyntaxNode`/`IOperation` instances and each line of code.
